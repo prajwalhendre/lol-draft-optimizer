@@ -39,6 +39,14 @@ function createStore({ snapshot, knowledge, ddragon = null }) {
     if (!byChampRole.has(k)) byChampRole.set(k, { ...e, detailed: false });
     allNames.add(e.champion);
   }
+
+  // Per-role entries sorted by composite score (meta-strength order), for pool fallback.
+  const byRole = new Map();
+  for (const e of byChampRole.values()) {
+    if (!byRole.has(e.role)) byRole.set(e.role, []);
+    byRole.get(e.role).push(e);
+  }
+  for (const list of byRole.values()) list.sort((a, b) => (b.score || 0) - (a.score || 0));
   if (ddragon && ddragon.byName) for (const n of Object.keys(ddragon.byName)) allNames.add(n);
 
   const lowerIndex = new Map();
@@ -61,6 +69,9 @@ function createStore({ snapshot, knowledge, ddragon = null }) {
   }
 
   function entry(name, role) { return byChampRole.get(`${name}|${role}`) || null; }
+
+  // All snapshot entries for a role, best composite score first.
+  function roleEntries(role) { return byRole.get(role) || []; }
 
   // Detailed entry for a champion in any role (prefer given role).
   function detailed(name, role = null) {
@@ -106,7 +117,7 @@ function createStore({ snapshot, knowledge, ddragon = null }) {
   return {
     snapshot, knowledge, ddragon, ROLES,
     patch: (snapshot._meta && snapshot._meta.patch) || 'unknown',
-    canonicalName, entry, detailed, attrs, runeOverride, buildOverride,
+    canonicalName, entry, roleEntries, detailed, attrs, runeOverride, buildOverride,
   };
 }
 

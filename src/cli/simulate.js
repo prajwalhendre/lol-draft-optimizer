@@ -33,11 +33,12 @@ function show() {
 
   if (!state.me.role) return;
   const picks = recommendPicks(store, profile, state);
-  if (!picks.length) { console.log(`${C.red}No available champions in your ${state.me.role} pool — edit data/profile.json${C.off}`); return; }
+  if (!picks.length) { console.log(`${C.red}No champions available to recommend for ${state.me.role} — check data/meta_tier_snapshot.json${C.off}`); return; }
   console.log(`\n${C.bold}Pick suggestions (${state.me.role}):${C.off}`);
   picks.slice(0, 6).forEach((r, i) => {
     const wr = r.winRate != null ? ` ${C.dim}${r.winRate.toFixed(1)}% WR${C.off}` : '';
-    console.log(`  ${i + 1}. ${C.green}${r.champion}${C.off} ${C.gold}${r.tier || ''}${C.off} (${r.score})${wr}`);
+    const src = r.source === 'meta' ? ` ${C.cyan}[meta]${C.off}` : '';
+    console.log(`  ${i + 1}. ${C.green}${r.champion}${C.off} ${C.gold}${r.tier || ''}${C.off} (${r.score})${wr}${src}`);
     console.log(`     ${C.dim}${r.reasons.join(' · ')}${C.off}`);
   });
 }

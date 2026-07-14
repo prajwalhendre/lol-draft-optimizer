@@ -60,14 +60,14 @@ test('tier_only champions: counter factor omitted, never penalized for missing d
   const s = stateWithRole('top');
   s.enemyTeam.push({ champion: 'Garen', role: 'top', cellId: 9, locked: true });
 
-  const [kled] = recommendPicks(store, profile, s);
+  const kled = recommendPicks(store, profile, s).find((p) => p.champion === 'Kled');
   assert.strictEqual(kled.hasCounterData, false);
   assert.ok(!kled.reasons.some((r) => r.startsWith('Struggles') || r.startsWith('Counters')), 'no counter reasons for tier_only champs');
   assert.ok(kled.reasons.some((r) => r.includes('No matchup data')), 'transparent about missing data');
 
   // Score must equal comfort + meta exactly (no hidden counter penalty).
-  const noEnemies = recommendPicks(store, profile, stateWithRole('top'));
-  assert.strictEqual(kled.score, noEnemies[0].score, 'enemy picks must not change a tier_only champ score');
+  const noEnemies = recommendPicks(store, profile, stateWithRole('top')).find((p) => p.champion === 'Kled');
+  assert.strictEqual(kled.score, noEnemies.score, 'enemy picks must not change a tier_only champ score');
 });
 
 test('banned and already-picked champions are excluded', () => {
@@ -81,7 +81,59 @@ test('banned and already-picked champions are excluded', () => {
   s2.enemyTeam.push({ champion: 'Garen', role: 'top', cellId: 9, locked: true });
   s2.myTeam.push({ champion: 'Darius', role: null, cellId: 1, locked: true });
   picks = recommendPicks(store, profile, s2);
-  assert.strictEqual(picks.length, 0, 'picked champs (either team) excluded');
+  assert.ok(!picks.some((p) => p.champion === 'Garen' || p.champion === 'Darius'), 'picked champs (either team) excluded');
+  assert.ok(picks.every((p) => p.source === 'meta'), 'wiped-out pool falls back to meta picks only');
+});
+
+test('always at least 3 recommendations: meta backfill when the pool cannot provide them', () => {
+  // Pool of one available champion -> two meta picks fill the gap.
+  const profile = { pools: { top: [{ champion: 'Kayle', weight: 4 }] } };
+  const picks = recommendPicks(store, profile, stateWithRole('top'));
+  assert.ok(picks.length >= 3, `expected >= 3 picks, got ${picks.length}`);
+  assert.strictEqual(picks.filter((p) => p.source === 'pool').length, 1);
+  assert.ok(picks.filter((p) => p.source === 'meta').length >= 2);
+  const meta = picks.find((p) => p.source === 'meta');
+  assert.ok(meta.reasons[0].includes('beyond your top pool'), 'meta picks are labeled');
+});
+
+test('empty pool for the position: best overall patch picks for that role', () => {
+  // Real profile has no adc pool -> pure meta recommendations, role-correct.
+  const profile = { pools: { adc: [] } };
+  const picks = recommendPicks(store, profile, stateWithRole('adc'));
+  assert.ok(picks.length >= 3);
+  assert.ok(picks.every((p) => p.source === 'meta'));
+  assert.ok(picks.every((p) => store.entry(p.champion, 'adc')), 'every pick exists in the adc snapshot');
+  assert.ok(picks[0].reasons[0].includes('no adc pool set'), 'labeled as pool-less fallback');
+});
+
+test('meta backfill respects bans and taken champions', () => {
+  const profile = { pools: { adc: [] } };
+  const s = stateWithRole('adc');
+  const [best, second] = store.roleEntries('adc');
+  s.bans.enemy.push(best.champion);
+  s.enemyTeam.push({ champion: second.champion, role: 'adc', cellId: 9, locked: true });
+  const picks = recommendPicks(store, profile, s);
+  assert.ok(picks.length >= 3);
+  assert.ok(!picks.some((p) => p.champion === best.champion), 'banned meta champ excluded from backfill');
+  assert.ok(!picks.some((p) => p.champion === second.champion), 'picked meta champ excluded from backfill');
+});
+
+test('pool sanitization: duplicates collapse and unresolvable names are dropped', () => {
+  const profile = { pools: { top: [
+    { champion: 'garen', weight: 5 },
+    { champion: 'GAREN', weight: 2 },
+    { champion: 'XxNotAChampxX', weight: 5 },
+  ] } };
+  const picks = recommendPicks(store, profile, stateWithRole('top'));
+  assert.strictEqual(picks.filter((p) => p.champion === 'Garen').length, 1, 'duplicate pool entries collapse');
+  assert.ok(!picks.some((p) => p.champion === 'XxNotAChampxX'), 'junk names never reach recommendations');
+  assert.ok(picks.length >= 3, 'backfill still tops up to 3');
+});
+
+test('no role known: returns empty rather than guessing a position', () => {
+  const profile = { pools: { top: [{ champion: 'Garen', weight: 5 }] } };
+  const picks = recommendPicks(store, profile, createDraftState());
+  assert.deepStrictEqual(picks, []);
 });
 
 test('duo synergy from either side of the pair', () => {
