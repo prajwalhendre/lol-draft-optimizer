@@ -2,7 +2,10 @@
 
 A local-first League of Legends draft assistant for macOS. During champ select it reads the League client's own local API (LCU) — no typing, no OCR, no cloud — and shows a transparent always-on-top overlay with:
 
-- **Pick suggestions** from *your* champion pool, ranked by comfort, current meta strength, counters vs the enemy draft, duo synergy, and team-comp gaps — re-ranked live on every ban/pick.
+- **Pick suggestions** from *your* champion pool, ranked by comfort, current meta strength, counters vs the enemy draft, duo synergy, and team-comp gaps — re-ranked live on every ban/pick. Always shows at least 3 suggestions for your assigned role: if your pool can't provide that many (empty, banned out, or picked by either team), the gap is filled with the patch's best meta picks for that role, scored through the same counter/synergy/comp logic and clearly labeled `meta` vs your own `pool` picks.
+- **Full team rosters** — ally and enemy, live — with each player's champion portrait, role, and lock status.
+- **Splash-art visuals**: every champion shows their current official splash art (Data Dragon's live splash endpoint, so reworked champions always show up-to-date art with no manual patching needed). Once a player locks in, their splash art blurs and bleeds a few pixels past their row into the surrounding panel — and stays that way for the rest of the draft.
+- **A lock-in effect** — an original golden beam/flash/shockwave animation plays on whichever roster row just locked in (bigger, centered, with a screen shake for your own lock; a smaller in-row version for teammates and enemies).
 - **Runes** for your locked champion, adjusted for the actual lane matchup and enemy comp.
 - **Item build** with situational counter-items (anti-heal, armor/MR, tenacity, anti-dive) as the enemy comp fills in.
 
@@ -25,7 +28,7 @@ npm install          # installs ws + Electron
 npm start
 ```
 
-Launch the League client whenever — the overlay auto-detects it via the lockfile and connects. First run needs internet once to cache Riot Data Dragon (champion ids/icons); it's cached per patch afterward.
+Launch the League client whenever — the overlay auto-detects it via the lockfile and connects. First run needs internet once to cache Riot Data Dragon (champion ids/icons); it's cached per patch afterward. Splash art loads live from Riot's CDN each session (not cached to disk), so it's always current.
 
 Hotkeys: `⌘⇧O` toggle click-through ↔ interactive · `⌘⇧H` show/hide.
 
@@ -50,14 +53,15 @@ npm test
 ```
 League client (LCU) ──lockfile──> WebSocket subscription (champ-select session events)
         │                                     │
-        └── Data Dragon (Riot, cached/patch)  ▼
-                    └────────────> canonical draft state ──> recommendation engine ──> overlay
-CLI manual mode ─────────────────────────────┘
+        └── Data Dragon (Riot: icons cached/patch, splash art live)  ▼
+                    └────────────────────> canonical draft state ──> recommendation engine ──> overlay
+CLI manual mode ───────────────────────────────────────────────┘
 ```
 
 - `src/lcu/` — lockfile discovery, LCU WebSocket client, session → draft-state parser
-- `src/engine/` — data store, pick scorer, rune + item recommenders, Data Dragon cache
-- `src/main/` + `src/renderer/` — Electron overlay (transparent, frameless, always-on-top)
+- `src/engine/` — data store, pick scorer (pool + meta-fallback), rune + item recommenders, Data Dragon cache (icons + live splash art)
+- `src/main/` — Electron main process; also diffs consecutive draft states to detect "just locked" transitions per player, driving the lock-in effect and resetting on reconnect/draft-end so it never replays for picks locked before you connected
+- `src/renderer/` — the overlay itself: rosters, pick cards, splash-art bleed, lock-in FX (transparent, frameless, always-on-top, 440×760)
 - `src/cli/` — manual draft mode behind the same draft-state interface
 
 ## Data files (and how to keep them fresh)
@@ -73,6 +77,7 @@ Champions that only appear in `tier_only_champions` have no counter data; the en
 - Meta/counter snapshot drifts each patch until manually refreshed (see above).
 - LCU champ-select payload fields drift slightly between client versions; the parser is defensive, and `LOL_DEBUG=1 npm start` logs raw sessions if something looks off.
 - Enemy roles aren't exposed by the client; the engine treats your lane opponent as the enemy assigned to your role when known, otherwise weights all enemies equally.
+- Splash art and the lock-in effect are overlay-only — `npm run cli` stays a plain-text draft planner, no visuals.
 - Phase 4 (self-computed win rates via the official Riot `match-v5` API) is intentionally not built.
 
 ## macOS notes
