@@ -43,6 +43,7 @@ window.draftApi.onDraft((p) => {
       html += `<div class="pick">${icon ? `<img src="${esc(icon)}" alt=""/>` : ''}<div class="body">
         <div class="top"><span class="name">${esc(r.champion)}</span>
           ${r.tier ? `<span class="tier">${esc(r.tier)}</span>` : ''}
+          ${r.source === 'meta' ? '<span class="tier">meta</span>' : ''}
           ${r.winRate != null ? `<span class="wr">${r.winRate.toFixed(1)}% WR</span>` : ''}</div>
         <div class="why">${esc(r.reasons.slice(0, 3).join(' · '))}</div>
         <div class="bar"><i style="width:${Math.max(6, Math.round((r.score / max) * 100))}%"></i></div>
