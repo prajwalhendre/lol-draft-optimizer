@@ -1,0 +1,20 @@
+{
+  "pools": {
+    "top": [
+      { "champion": "Sion", "weight": 5 },
+      { "champion": "Kayle", "weight": 4 }
+    ],
+    "jungle": [
+      { "champion": "Nocturne", "weight": 4 },
+      { "champion": "Sion", "weight": 3 }
+    ],
+    "mid": [
+      { "champion": "Ziggs", "weight": 4 },
+      { "champion": "Azir", "weight": 3 },
+      { "champion": "Sion", "weight": 3 }
+    ],
+    "adc": [],
+    "support": []
+  },
+  "preferences": { "runes": {}, "builds": {} }
+}

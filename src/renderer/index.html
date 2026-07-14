@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://ddragon.leagueoflegends.com; style-src 'self' 'unsafe-inline'" />
+  <title>Draft Optimizer</title>
+  <style>
+    :root {
+      --bg: rgba(10, 14, 22, 0.82);
+      --panel: rgba(20, 26, 38, 0.85);
+      --text: #e8eef7;
+      --dim: #93a0b4;
+      --accent: #4fd1c5;
+      --gold: #d4af6a;
+      --bad: #e57373;
+      --good: #81c784;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: transparent; height: 100%; overflow: hidden; }
+    body {
+      font: 12px/1.45 -apple-system, "SF Pro Text", Helvetica, Arial, sans-serif;
+      color: var(--text);
+      -webkit-user-select: none;
+    }
+    #app { display: flex; flex-direction: column; height: 100vh; background: var(--bg); border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); overflow: hidden; }
+    header { padding: 8px 12px; display: flex; align-items: center; gap: 8px; background: var(--panel); -webkit-app-region: drag; }
+    #dot { width: 8px; height: 8px; border-radius: 50%; background: var(--bad); flex: none; }
+    #dot.on { background: var(--good); }
+    #statusText { flex: 1; color: var(--dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    #mode { font-size: 10px; color: var(--dim); }
+    main { flex: 1; overflow-y: auto; padding: 10px 12px 14px; }
+    h2 { font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin: 12px 0 6px; }
+    .hint { color: var(--dim); font-size: 11px; }
+    .bans { display: flex; gap: 10px; flex-wrap: wrap; }
+    .bans span { color: var(--dim); }
+    .bans b { color: var(--bad); font-weight: 500; }
+    .pick { background: var(--panel); border-radius: 8px; padding: 7px 9px; margin-bottom: 6px; display: flex; gap: 9px; }
+    .pick img { width: 34px; height: 34px; border-radius: 6px; flex: none; }
+    .pick .body { flex: 1; min-width: 0; }
+    .pick .top { display: flex; align-items: baseline; gap: 6px; }
+    .pick .name { font-weight: 600; font-size: 13px; }
+    .pick .tier { color: var(--gold); font-size: 10px; }
+    .pick .wr { color: var(--dim); font-size: 10px; margin-left: auto; }
+    .pick .why { color: var(--dim); font-size: 11px; margin-top: 2px; }
+    .bar { height: 3px; border-radius: 2px; background: rgba(255,255,255,0.08); margin-top: 5px; }
+    .bar i { display: block; height: 100%; border-radius: 2px; background: var(--accent); }
+    .runebox, .itembox { background: var(--panel); border-radius: 8px; padding: 8px 10px; }
+    .runebox .ks { font-weight: 600; color: var(--gold); }
+    .runebox .row, .itembox .row { margin-top: 3px; color: var(--text); }
+    .note { color: var(--accent); font-size: 11px; margin-top: 4px; }
+    .sit { margin-top: 4px; }
+    .sit b { color: var(--gold); font-weight: 500; }
+    .sit span { color: var(--dim); }
+    .src { color: var(--dim); font-size: 10px; margin-top: 5px; }
+    footer { padding: 6px 12px; background: var(--panel); color: var(--dim); font-size: 10px; }
+    kbd { background: rgba(255,255,255,0.1); border-radius: 3px; padding: 0 4px; font-size: 10px; }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div id="dot"></div>
+      <div id="statusText">Starting…</div>
+      <div id="mode">ghost</div>
+    </header>
+    <main id="main">
+      <p class="hint">Launch the League client and enter champ select — recommendations appear here automatically. Edit <code>data/profile.json</code> to set your champion pool.</p>
+    </main>
+    <footer><kbd>⌘⇧O</kbd> interact / click-through &nbsp; <kbd>⌘⇧H</kbd> hide</footer>
+  </div>
+  <script src="overlay.js"></script>
+</body>
+</html>

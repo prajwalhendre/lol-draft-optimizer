@@ -1,0 +1,2760 @@
+{
+  "_meta": {
+    "source": "METAsrc.com public per-role tier list pages (https://www.metasrc.com/lol/tier-list/{top,jungle,mid,adc,support})",
+    "patch": "26.13",
+    "rank_bracket": "All Ranks, All Regions (default filter)",
+    "captured": "2026-07-11",
+    "refresh_instructions": "This snapshot goes stale every patch. Re-pull the five per-role tier list pages manually each patch and regenerate this file. It is NOT a live feed and NOT an API integration -- static reference data by design, to avoid ToS issues with scraping.",
+    "fields": {
+      "tier": "S+, S, A, B, C, or D -- per-role performance tier at this rank bracket/patch",
+      "score": "METAsrc composite score (win rate + pick rate + ban rate + KDA + volume). This is what tiers are based on. NOT a win rate.",
+      "win_rate": "actual win percentage (detailed entries only)",
+      "countered_by": "DIRECTION MATTERS: champions this champion STRUGGLES AGAINST (they counter it). To find good picks INTO enemy champion X, search for X in other champions' countered_by lists. Only on detailed entries.",
+      "duos": "champions with strong observed synergy alongside this champion (any role pairing, not just bot lane). Only on detailed entries."
+    },
+    "coverage_note": "detailed_champions covers the ~20 highest-score champions per role (100 champion-role pairs total) with counter and duo data. tier_only_champions covers the full remaining per-role tier lists (tier + score only)."
+  },
+  "detailed_champions": [
+    {
+      "champion": "Garen",
+      "role": "top",
+      "tier": "S+",
+      "score": 67.26,
+      "win_rate": 51.97,
+      "countered_by": [
+        "Tryndamere",
+        "Teemo",
+        "Sett"
+      ],
+      "duos": [
+        "Seraphine",
+        "Leona",
+        "Nocturne"
+      ]
+    },
+    {
+      "champion": "Sett",
+      "role": "top",
+      "tier": "S+",
+      "score": 66.15,
+      "win_rate": 51.93,
+      "countered_by": [
+        "Illaoi",
+        "Vayne",
+        "Malphite"
+      ],
+      "duos": [
+        "Warwick",
+        "Seraphine",
+        "Master Yi"
+      ]
+    },
+    {
+      "champion": "Darius",
+      "role": "top",
+      "tier": "S+",
+      "score": 66.09,
+      "win_rate": 49.13,
+      "countered_by": [
+        "Teemo",
+        "Sett",
+        "Malphite"
+      ],
+      "duos": [
+        "Seraphine",
+        "Leona",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Mordekaiser",
+      "role": "top",
+      "tier": "S+",
+      "score": 65.24,
+      "win_rate": 50.29,
+      "countered_by": [
+        "Yorick",
+        "Yone",
+        "Jax"
+      ],
+      "duos": [
+        "Yasuo",
+        "Seraphine",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Teemo",
+      "role": "top",
+      "tier": "S+",
+      "score": 64.99,
+      "win_rate": 51.68,
+      "countered_by": [
+        "Yorick",
+        "Malphite",
+        "Yasuo"
+      ],
+      "duos": [
+        "Yasuo",
+        "Jinx",
+        "Miss Fortune"
+      ]
+    },
+    {
+      "champion": "Yone",
+      "role": "top",
+      "tier": "S+",
+      "score": 64.07,
+      "win_rate": 49.97,
+      "countered_by": [
+        "Sett",
+        "Garen",
+        "Darius"
+      ],
+      "duos": [
+        "Leona",
+        "Seraphine",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Malphite",
+      "role": "top",
+      "tier": "S",
+      "score": 63.83,
+      "win_rate": 51.41,
+      "countered_by": [
+        "Dr. Mundo",
+        "Sion",
+        "Mordekaiser"
+      ],
+      "duos": [
+        "Seraphine",
+        "Jinx",
+        "Thresh"
+      ]
+    },
+    {
+      "champion": "Jax",
+      "role": "top",
+      "tier": "S",
+      "score": 63.17,
+      "win_rate": 50.9,
+      "countered_by": [
+        "Garen",
+        "Malphite",
+        "Teemo"
+      ],
+      "duos": [
+        "Nocturne",
+        "Seraphine",
+        "Master Yi"
+      ]
+    },
+    {
+      "champion": "Aatrox",
+      "role": "top",
+      "tier": "S",
+      "score": 62.29,
+      "win_rate": 49.39,
+      "countered_by": [
+        "Malphite",
+        "Garen",
+        "Yone"
+      ],
+      "duos": [
+        "Senna",
+        "Leona",
+        "Seraphine"
+      ]
+    },
+    {
+      "champion": "Yorick",
+      "role": "top",
+      "tier": "S",
+      "score": 62.28,
+      "win_rate": 51.87,
+      "countered_by": [
+        "Yone",
+        "Irelia",
+        "Renekton"
+      ],
+      "duos": [
+        "Seraphine",
+        "Leona",
+        "Nocturne"
+      ]
+    },
+    {
+      "champion": "Renekton",
+      "role": "top",
+      "tier": "S",
+      "score": 61.4,
+      "win_rate": 50.36,
+      "countered_by": [
+        "Teemo",
+        "Garen",
+        "Mordekaiser"
+      ],
+      "duos": [
+        "Senna",
+        "Seraphine",
+        "Ashe"
+      ]
+    },
+    {
+      "champion": "Dr. Mundo",
+      "role": "top",
+      "tier": "S",
+      "score": 61.16,
+      "win_rate": 51.79,
+      "countered_by": [
+        "Yone",
+        "Aatrox",
+        "Garen"
+      ],
+      "duos": [
+        "Kayn",
+        "Seraphine",
+        "Miss Fortune"
+      ]
+    },
+    {
+      "champion": "Nasus",
+      "role": "top",
+      "tier": "S",
+      "score": 60.36,
+      "win_rate": 50.66,
+      "countered_by": [
+        "Illaoi",
+        "Garen",
+        "Yone"
+      ],
+      "duos": [
+        "Seraphine",
+        "Miss Fortune",
+        "Kayn"
+      ]
+    },
+    {
+      "champion": "Illaoi",
+      "role": "top",
+      "tier": "S",
+      "score": 60.08,
+      "win_rate": 51.89,
+      "countered_by": [
+        "Teemo",
+        "Mordekaiser",
+        "Yorick"
+      ],
+      "duos": [
+        "Master Yi",
+        "Seraphine",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Tryndamere",
+      "role": "top",
+      "tier": "S",
+      "score": 59.4,
+      "win_rate": 51.3,
+      "countered_by": [
+        "Malphite",
+        "Teemo",
+        "Jax"
+      ],
+      "duos": [
+        "Leona",
+        "Morgana",
+        "Seraphine"
+      ]
+    },
+    {
+      "champion": "Gangplank",
+      "role": "top",
+      "tier": "A",
+      "score": 58.55,
+      "win_rate": 49.91,
+      "countered_by": [
+        "Malphite",
+        "Garen",
+        "Teemo"
+      ],
+      "duos": [
+        "Thresh",
+        "Nautilus",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Irelia",
+      "role": "top",
+      "tier": "A",
+      "score": 57.97,
+      "win_rate": 49.81,
+      "countered_by": [
+        "Sett",
+        "Malphite",
+        "Garen"
+      ],
+      "duos": [
+        "Senna",
+        "Seraphine",
+        "Thresh"
+      ]
+    },
+    {
+      "champion": "Sion",
+      "role": "top",
+      "tier": "A",
+      "score": 57.58,
+      "win_rate": 50.54,
+      "countered_by": [
+        "Yone",
+        "Garen",
+        "Darius"
+      ],
+      "duos": [
+        "Seraphine",
+        "Thresh",
+        "Viego"
+      ]
+    },
+    {
+      "champion": "Yasuo",
+      "role": "top",
+      "tier": "A",
+      "score": 56.74,
+      "win_rate": 49.18,
+      "countered_by": [
+        "Sett",
+        "Garen",
+        "Darius"
+      ],
+      "duos": [
+        "Seraphine",
+        "Nautilus",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Volibear",
+      "role": "top",
+      "tier": "A",
+      "score": 56.41,
+      "win_rate": 50.24,
+      "countered_by": [
+        "Jax",
+        "Teemo",
+        "Garen"
+      ],
+      "duos": [
+        "Seraphine",
+        "Jinx",
+        "Miss Fortune"
+      ]
+    },
+    {
+      "champion": "Master Yi",
+      "role": "jungle",
+      "tier": "S+",
+      "score": 67.22,
+      "win_rate": 50.97,
+      "countered_by": [
+        "Rammus",
+        "Jax",
+        "Warwick"
+      ],
+      "duos": [
+        "Garen",
+        "Mordekaiser",
+        "Seraphine"
+      ]
+    },
+    {
+      "champion": "Lee Sin",
+      "role": "jungle",
+      "tier": "S+",
+      "score": 66.07,
+      "win_rate": 48.08,
+      "countered_by": [
+        "Master Yi",
+        "Graves",
+        "Viego"
+      ],
+      "duos": [
+        "Seraphine",
+        "Jinx",
+        "Thresh"
+      ]
+    },
+    {
+      "champion": "Kayn",
+      "role": "jungle",
+      "tier": "S+",
+      "score": 66.06,
+      "win_rate": 50.51,
+      "countered_by": [
+        "Master Yi",
+        "Warwick",
+        "Nocturne"
+      ],
+      "duos": [
+        "Seraphine",
+        "Sett",
+        "Garen"
+      ]
+    },
+    {
+      "champion": "Viego",
+      "role": "jungle",
+      "tier": "S+",
+      "score": 65.49,
+      "win_rate": 50.34,
+      "countered_by": [
+        "Warwick",
+        "Shyvana",
+        "Briar"
+      ],
+      "duos": [
+        "Seraphine",
+        "Garen",
+        "Ashe"
+      ]
+    },
+    {
+      "champion": "Nocturne",
+      "role": "jungle",
+      "tier": "S+",
+      "score": 65.25,
+      "win_rate": 51.71,
+      "countered_by": [
+        "Nasus",
+        "Shyvana",
+        "Wukong"
+      ],
+      "duos": [
+        "Garen",
+        "Seraphine",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Graves",
+      "role": "jungle",
+      "tier": "S+",
+      "score": 64.38,
+      "win_rate": 50.15,
+      "countered_by": [
+        "Naafiri",
+        "Nocturne",
+        "Briar"
+      ],
+      "duos": [
+        "Thresh",
+        "Nautilus",
+        "Seraphine"
+      ]
+    },
+    {
+      "champion": "Warwick",
+      "role": "jungle",
+      "tier": "S",
+      "score": 64.24,
+      "win_rate": 51.97,
+      "countered_by": [
+        "Amumu",
+        "Shyvana",
+        "Jax"
+      ],
+      "duos": [
+        "Seraphine",
+        "Miss Fortune",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Briar",
+      "role": "jungle",
+      "tier": "S",
+      "score": 63.28,
+      "win_rate": 52.43,
+      "countered_by": [
+        "Nasus",
+        "Jax",
+        "Wukong"
+      ],
+      "duos": [
+        "Teemo",
+        "Sett",
+        "Garen"
+      ]
+    },
+    {
+      "champion": "Sylas",
+      "role": "jungle",
+      "tier": "S",
+      "score": 62.24,
+      "win_rate": 50.08,
+      "countered_by": [
+        "Master Yi",
+        "Viego",
+        "Nocturne"
+      ],
+      "duos": [
+        "Seraphine",
+        "Jinx",
+        "Miss Fortune"
+      ]
+    },
+    {
+      "champion": "Locke",
+      "role": "jungle",
+      "tier": "S",
+      "score": 61.99,
+      "win_rate": 44.01,
+      "countered_by": [
+        "Master Yi",
+        "Viego",
+        "Kayn"
+      ],
+      "duos": [
+        "Yasuo",
+        "Yone",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Shaco",
+      "role": "jungle",
+      "tier": "S",
+      "score": 61.52,
+      "win_rate": 49.23,
+      "countered_by": [
+        "Nocturne",
+        "Warwick",
+        "Kayn"
+      ],
+      "duos": [
+        "Garen",
+        "Seraphine",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Naafiri",
+      "role": "jungle",
+      "tier": "S",
+      "score": 61.23,
+      "win_rate": 50.36,
+      "countered_by": [
+        "Nocturne",
+        "Kayn",
+        "Master Yi"
+      ],
+      "duos": [
+        "Garen",
+        "Seraphine",
+        "Thresh"
+      ]
+    },
+    {
+      "champion": "Vi",
+      "role": "jungle",
+      "tier": "S",
+      "score": 60.87,
+      "win_rate": 51.16,
+      "countered_by": [
+        "Wukong",
+        "Nocturne",
+        "Briar"
+      ],
+      "duos": [
+        "Seraphine",
+        "Garen",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Shyvana",
+      "role": "jungle",
+      "tier": "S",
+      "score": 60.81,
+      "win_rate": 53.34,
+      "countered_by": [
+        "Sylas",
+        "Tryndamere",
+        "Nasus"
+      ],
+      "duos": [
+        "Leona",
+        "Garen",
+        "Seraphine"
+      ]
+    },
+    {
+      "champion": "Wukong",
+      "role": "jungle",
+      "tier": "S",
+      "score": 60.13,
+      "win_rate": 52.63,
+      "countered_by": [
+        "Shyvana",
+        "Dr. Mundo",
+        "Zyra"
+      ],
+      "duos": [
+        "Seraphine",
+        "Garen",
+        "Thresh"
+      ]
+    },
+    {
+      "champion": "Jarvan IV",
+      "role": "jungle",
+      "tier": "S",
+      "score": 59.28,
+      "win_rate": 51.17,
+      "countered_by": [
+        "Briar",
+        "Wukong",
+        "Master Yi"
+      ],
+      "duos": [
+        "Jinx",
+        "Seraphine",
+        "Miss Fortune"
+      ]
+    },
+    {
+      "champion": "Diana",
+      "role": "jungle",
+      "tier": "A",
+      "score": 58.6,
+      "win_rate": 50.49,
+      "countered_by": [
+        "Nocturne",
+        "Master Yi",
+        "Viego"
+      ],
+      "duos": [
+        "Jinx",
+        "Seraphine",
+        "Yasuo"
+      ]
+    },
+    {
+      "champion": "Xin Zhao",
+      "role": "jungle",
+      "tier": "A",
+      "score": 58.15,
+      "win_rate": 50.88,
+      "countered_by": [
+        "Warwick",
+        "Wukong",
+        "Briar"
+      ],
+      "duos": [
+        "Garen",
+        "Seraphine",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Amumu",
+      "role": "jungle",
+      "tier": "A",
+      "score": 57.38,
+      "win_rate": 52.24,
+      "countered_by": [
+        "Nasus",
+        "Olaf",
+        "Shyvana"
+      ],
+      "duos": [
+        "Seraphine",
+        "Miss Fortune",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Kha'Zix",
+      "role": "jungle",
+      "tier": "A",
+      "score": 57.08,
+      "win_rate": 48.36,
+      "countered_by": [
+        "Kayn",
+        "Master Yi",
+        "Viego"
+      ],
+      "duos": [
+        "Garen",
+        "Seraphine",
+        "Thresh"
+      ]
+    },
+    {
+      "champion": "Locke",
+      "role": "mid",
+      "tier": "S+",
+      "score": 66.7,
+      "win_rate": 48.98,
+      "countered_by": [
+        "Yasuo",
+        "Akali",
+        "Yone"
+      ],
+      "duos": [
+        "Master Yi",
+        "Garen",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Yasuo",
+      "role": "mid",
+      "tier": "S+",
+      "score": 66.31,
+      "win_rate": 50.04,
+      "countered_by": [
+        "Malzahar",
+        "Yone",
+        "Fizz"
+      ],
+      "duos": [
+        "Malphite",
+        "Seraphine",
+        "Mordekaiser"
+      ]
+    },
+    {
+      "champion": "Ahri",
+      "role": "mid",
+      "tier": "S+",
+      "score": 65.73,
+      "win_rate": 50.19,
+      "countered_by": [
+        "Veigar",
+        "Malzahar",
+        "Viktor"
+      ],
+      "duos": [
+        "Garen",
+        "Seraphine",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Yone",
+      "role": "mid",
+      "tier": "S+",
+      "score": 65.07,
+      "win_rate": 49.97,
+      "countered_by": [
+        "Ahri",
+        "Katarina",
+        "Akali"
+      ],
+      "duos": [
+        "Teemo",
+        "Seraphine",
+        "Mordekaiser"
+      ]
+    },
+    {
+      "champion": "Sylas",
+      "role": "mid",
+      "tier": "S+",
+      "score": 64.5,
+      "win_rate": 50.19,
+      "countered_by": [
+        "Malzahar",
+        "Veigar",
+        "Yasuo"
+      ],
+      "duos": [
+        "Seraphine",
+        "Garen",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Malzahar",
+      "role": "mid",
+      "tier": "S",
+      "score": 64.32,
+      "win_rate": 52.15,
+      "countered_by": [
+        "Sion",
+        "Gwen",
+        "Xerath"
+      ],
+      "duos": [
+        "Seraphine",
+        "Jinx",
+        "Miss Fortune"
+      ]
+    },
+    {
+      "champion": "Akali",
+      "role": "mid",
+      "tier": "S",
+      "score": 62.97,
+      "win_rate": 48.77,
+      "countered_by": [
+        "Galio",
+        "Ahri",
+        "Zed"
+      ],
+      "duos": [
+        "Garen",
+        "Seraphine",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Zed",
+      "role": "mid",
+      "tier": "S",
+      "score": 62.42,
+      "win_rate": 49.08,
+      "countered_by": [
+        "Malzahar",
+        "Sylas",
+        "Yasuo"
+      ],
+      "duos": [
+        "Sylas",
+        "Seraphine",
+        "Mordekaiser"
+      ]
+    },
+    {
+      "champion": "Veigar",
+      "role": "mid",
+      "tier": "S",
+      "score": 62.38,
+      "win_rate": 51.73,
+      "countered_by": [
+        "Xerath",
+        "Katarina",
+        "Vel'Koz"
+      ],
+      "duos": [
+        "Garen",
+        "Seraphine",
+        "Miss Fortune"
+      ]
+    },
+    {
+      "champion": "Katarina",
+      "role": "mid",
+      "tier": "S",
+      "score": 61.31,
+      "win_rate": 49.62,
+      "countered_by": [
+        "Malzahar",
+        "Yasuo",
+        "Sylas"
+      ],
+      "duos": [
+        "Seraphine",
+        "Garen",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Fizz",
+      "role": "mid",
+      "tier": "S",
+      "score": 61.12,
+      "win_rate": 51.55,
+      "countered_by": [
+        "Lissandra",
+        "Diana",
+        "Sylas"
+      ],
+      "duos": [
+        "Seraphine",
+        "Garen",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Viktor",
+      "role": "mid",
+      "tier": "S",
+      "score": 60.46,
+      "win_rate": 51.36,
+      "countered_by": [
+        "Xerath",
+        "Veigar",
+        "Syndra"
+      ],
+      "duos": [
+        "Thresh",
+        "Seraphine",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Lux",
+      "role": "mid",
+      "tier": "S",
+      "score": 59.7,
+      "win_rate": 50.7,
+      "countered_by": [
+        "Fizz",
+        "Yasuo",
+        "Malzahar"
+      ],
+      "duos": [
+        "Master Yi",
+        "Thresh",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Diana",
+      "role": "mid",
+      "tier": "A",
+      "score": 59.27,
+      "win_rate": 51.52,
+      "countered_by": [
+        "Swain",
+        "Galio",
+        "Veigar"
+      ],
+      "duos": [
+        "Seraphine",
+        "Jinx",
+        "Miss Fortune"
+      ]
+    },
+    {
+      "champion": "Syndra",
+      "role": "mid",
+      "tier": "A",
+      "score": 58.54,
+      "win_rate": 51.0,
+      "countered_by": [
+        "Fizz",
+        "Katarina",
+        "Xerath"
+      ],
+      "duos": [
+        "Seraphine",
+        "Thresh",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Galio",
+      "role": "mid",
+      "tier": "A",
+      "score": 57.93,
+      "win_rate": 51.04,
+      "countered_by": [
+        "Veigar",
+        "Yone",
+        "Syndra"
+      ],
+      "duos": [
+        "Seraphine",
+        "Master Yi",
+        "Thresh"
+      ]
+    },
+    {
+      "champion": "Xerath",
+      "role": "mid",
+      "tier": "A",
+      "score": 56.88,
+      "win_rate": 51.83,
+      "countered_by": [
+        "Naafiri",
+        "Fizz",
+        "Irelia"
+      ],
+      "duos": [
+        "Garen",
+        "Master Yi",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Mel",
+      "role": "mid",
+      "tier": "A",
+      "score": 56.4,
+      "win_rate": 46.82,
+      "countered_by": [
+        "Yasuo",
+        "Locke",
+        "Yone"
+      ],
+      "duos": [
+        "Jinx",
+        "Master Yi",
+        "Seraphine"
+      ]
+    },
+    {
+      "champion": "Vex",
+      "role": "mid",
+      "tier": "A",
+      "score": 56.09,
+      "win_rate": 51.04,
+      "countered_by": [
+        "Veigar",
+        "Malzahar",
+        "Lux"
+      ],
+      "duos": [
+        "Garen",
+        "Viego",
+        "Master Yi"
+      ]
+    },
+    {
+      "champion": "Naafiri",
+      "role": "mid",
+      "tier": "A",
+      "score": 55.02,
+      "win_rate": 51.77,
+      "countered_by": [
+        "Malzahar",
+        "Yone",
+        "Yasuo"
+      ],
+      "duos": [
+        "Seraphine",
+        "Garen",
+        "Mordekaiser"
+      ]
+    },
+    {
+      "champion": "Caitlyn",
+      "role": "adc",
+      "tier": "S+",
+      "score": 66.88,
+      "win_rate": 49.66,
+      "countered_by": [
+        "Senna",
+        "Smolder",
+        "Jinx"
+      ],
+      "duos": [
+        "Garen",
+        "Morgana",
+        "Nocturne"
+      ]
+    },
+    {
+      "champion": "Miss Fortune",
+      "role": "adc",
+      "tier": "S+",
+      "score": 66.13,
+      "win_rate": 50.58,
+      "countered_by": [
+        "Senna",
+        "Ziggs",
+        "Smolder"
+      ],
+      "duos": [
+        "Leona",
+        "Garen",
+        "Nautilus"
+      ]
+    },
+    {
+      "champion": "Jhin",
+      "role": "adc",
+      "tier": "S+",
+      "score": 65.01,
+      "win_rate": 49.78,
+      "countered_by": [
+        "Senna",
+        "Jinx",
+        "Tristana"
+      ],
+      "duos": [
+        "Xerath",
+        "Garen",
+        "Seraphine"
+      ]
+    },
+    {
+      "champion": "Jinx",
+      "role": "adc",
+      "tier": "S",
+      "score": 64.35,
+      "win_rate": 51.14,
+      "countered_by": [
+        "Ziggs",
+        "Twitch",
+        "Senna"
+      ],
+      "duos": [
+        "Thresh",
+        "Garen",
+        "Lulu"
+      ]
+    },
+    {
+      "champion": "Ashe",
+      "role": "adc",
+      "tier": "S",
+      "score": 63.2,
+      "win_rate": 50.22,
+      "countered_by": [
+        "Senna",
+        "Tristana",
+        "Smolder"
+      ],
+      "duos": [
+        "Seraphine",
+        "Garen",
+        "Master Yi"
+      ]
+    },
+    {
+      "champion": "Ezreal",
+      "role": "adc",
+      "tier": "S",
+      "score": 61.6,
+      "win_rate": 47.22,
+      "countered_by": [
+        "Kai'Sa",
+        "Jhin",
+        "Caitlyn"
+      ],
+      "duos": [
+        "Garen",
+        "Seraphine",
+        "Master Yi"
+      ]
+    },
+    {
+      "champion": "Kai'Sa",
+      "role": "adc",
+      "tier": "S",
+      "score": 61.06,
+      "win_rate": 49.09,
+      "countered_by": [
+        "Jinx",
+        "Ashe",
+        "Miss Fortune"
+      ],
+      "duos": [
+        "Leona",
+        "Garen",
+        "Seraphine"
+      ]
+    },
+    {
+      "champion": "Tristana",
+      "role": "adc",
+      "tier": "S",
+      "score": 60.39,
+      "win_rate": 50.39,
+      "countered_by": [
+        "Smolder",
+        "Samira",
+        "Senna"
+      ],
+      "duos": [
+        "Teemo",
+        "Garen",
+        "Leona"
+      ]
+    },
+    {
+      "champion": "Senna",
+      "role": "adc",
+      "tier": "S",
+      "score": 60.09,
+      "win_rate": 53.39,
+      "countered_by": [
+        "Aurelion Sol",
+        "Seraphine",
+        "Hwei"
+      ],
+      "duos": [
+        "Garen",
+        "Thresh",
+        "Seraphine"
+      ]
+    },
+    {
+      "champion": "Lucian",
+      "role": "adc",
+      "tier": "A",
+      "score": 58.11,
+      "win_rate": 48.63,
+      "countered_by": [
+        "Miss Fortune",
+        "Caitlyn",
+        "Jhin"
+      ],
+      "duos": [
+        "Milio",
+        "Braum",
+        "Thresh"
+      ]
+    },
+    {
+      "champion": "Samira",
+      "role": "adc",
+      "tier": "A",
+      "score": 57.63,
+      "win_rate": 50.8,
+      "countered_by": [
+        "Senna",
+        "Smolder",
+        "Jinx"
+      ],
+      "duos": [
+        "Leona",
+        "Nautilus",
+        "Thresh"
+      ]
+    },
+    {
+      "champion": "Smolder",
+      "role": "adc",
+      "tier": "A",
+      "score": 56.88,
+      "win_rate": 51.72,
+      "countered_by": [
+        "Seraphine",
+        "Senna",
+        "Brand"
+      ],
+      "duos": [
+        "Garen",
+        "Thresh",
+        "Master Yi"
+      ]
+    },
+    {
+      "champion": "Vayne",
+      "role": "adc",
+      "tier": "A",
+      "score": 55.59,
+      "win_rate": 50.15,
+      "countered_by": [
+        "Jinx",
+        "Miss Fortune",
+        "Tristana"
+      ],
+      "duos": [
+        "Seraphine",
+        "Teemo",
+        "Garen"
+      ]
+    },
+    {
+      "champion": "Twitch",
+      "role": "adc",
+      "tier": "A",
+      "score": 54.79,
+      "win_rate": 50.84,
+      "countered_by": [
+        "Nilah",
+        "Samira",
+        "Senna"
+      ],
+      "duos": [
+        "Teemo",
+        "Garen",
+        "Sett"
+      ]
+    },
+    {
+      "champion": "Aphelios",
+      "role": "adc",
+      "tier": "A",
+      "score": 53.65,
+      "win_rate": 49.99,
+      "countered_by": [
+        "Senna",
+        "Jinx",
+        "Ashe"
+      ],
+      "duos": [
+        "Thresh",
+        "Garen",
+        "Seraphine"
+      ]
+    },
+    {
+      "champion": "Yunara",
+      "role": "adc",
+      "tier": "A",
+      "score": 52.27,
+      "win_rate": 48.0,
+      "countered_by": [
+        "Caitlyn",
+        "Miss Fortune",
+        "Jhin"
+      ],
+      "duos": [
+        "Garen",
+        "Thresh",
+        "Master Yi"
+      ]
+    },
+    {
+      "champion": "Xayah",
+      "role": "adc",
+      "tier": "A",
+      "score": 51.86,
+      "win_rate": 50.47,
+      "countered_by": [
+        "Jinx",
+        "Ashe",
+        "Miss Fortune"
+      ],
+      "duos": [
+        "Garen",
+        "Thresh",
+        "Nautilus"
+      ]
+    },
+    {
+      "champion": "Sivir",
+      "role": "adc",
+      "tier": "A",
+      "score": 50.9,
+      "win_rate": 50.43,
+      "countered_by": [
+        "Senna",
+        "Jinx",
+        "Ashe"
+      ],
+      "duos": [
+        "Nocturne",
+        "Thresh",
+        "Garen"
+      ]
+    },
+    {
+      "champion": "Draven",
+      "role": "adc",
+      "tier": "B",
+      "score": 49.54,
+      "win_rate": 48.54,
+      "countered_by": [
+        "Caitlyn",
+        "Miss Fortune",
+        "Jhin"
+      ],
+      "duos": [
+        "Thresh",
+        "Leona",
+        "Garen"
+      ]
+    },
+    {
+      "champion": "Ziggs",
+      "role": "adc",
+      "tier": "B",
+      "score": 48.33,
+      "win_rate": 51.71,
+      "countered_by": [
+        "Senna",
+        "Vayne",
+        "Yasuo"
+      ],
+      "duos": [
+        "Senna",
+        "Yasuo",
+        "Yone"
+      ]
+    },
+    {
+      "champion": "Seraphine",
+      "role": "support",
+      "tier": "S+",
+      "score": 67.17,
+      "win_rate": 51.5,
+      "countered_by": [
+        "Teemo"
+      ],
+      "duos": [
+        "Ashe",
+        "Garen",
+        "Viego"
+      ]
+    },
+    {
+      "champion": "Lux",
+      "role": "support",
+      "tier": "S+",
+      "score": 66.18,
+      "win_rate": 49.81,
+      "countered_by": [
+        "Leona",
+        "Nautilus",
+        "Blitzcrank"
+      ],
+      "duos": [
+        "Garen",
+        "Master Yi",
+        "Yasuo"
+      ]
+    },
+    {
+      "champion": "Thresh",
+      "role": "support",
+      "tier": "S+",
+      "score": 65.77,
+      "win_rate": 50.81,
+      "countered_by": [
+        "Seraphine",
+        "Leona",
+        "Morgana"
+      ],
+      "duos": [
+        "Jinx",
+        "Aphelios",
+        "Miss Fortune"
+      ]
+    },
+    {
+      "champion": "Nautilus",
+      "role": "support",
+      "tier": "S+",
+      "score": 65.06,
+      "win_rate": 50.39,
+      "countered_by": [
+        "Leona",
+        "Seraphine",
+        "Thresh"
+      ],
+      "duos": [
+        "Samira",
+        "Miss Fortune",
+        "Garen"
+      ]
+    },
+    {
+      "champion": "Leona",
+      "role": "support",
+      "tier": "S+",
+      "score": 64.77,
+      "win_rate": 51.97,
+      "countered_by": [
+        "Taric",
+        "Teemo"
+      ],
+      "duos": [
+        "Samira",
+        "Miss Fortune",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Morgana",
+      "role": "support",
+      "tier": "S",
+      "score": 63.81,
+      "win_rate": 50.43,
+      "countered_by": [
+        "Milio",
+        "Senna",
+        "Brand"
+      ],
+      "duos": [
+        "Garen",
+        "Master Yi",
+        "Caitlyn"
+      ]
+    },
+    {
+      "champion": "Senna",
+      "role": "support",
+      "tier": "S",
+      "score": 63.44,
+      "win_rate": 51.59,
+      "countered_by": [
+        "Zyra"
+      ],
+      "duos": [
+        "Garen",
+        "Nocturne",
+        "Sett"
+      ]
+    },
+    {
+      "champion": "Pyke",
+      "role": "support",
+      "tier": "S",
+      "score": 62.14,
+      "win_rate": 48.47,
+      "countered_by": [
+        "Nautilus",
+        "Thresh",
+        "Seraphine"
+      ],
+      "duos": [
+        "Garen",
+        "Jinx",
+        "Miss Fortune"
+      ]
+    },
+    {
+      "champion": "Blitzcrank",
+      "role": "support",
+      "tier": "S",
+      "score": 61.89,
+      "win_rate": 50.16,
+      "countered_by": [
+        "Nautilus",
+        "Seraphine",
+        "Thresh"
+      ],
+      "duos": [
+        "Miss Fortune",
+        "Jinx",
+        "Tristana"
+      ]
+    },
+    {
+      "champion": "Nami",
+      "role": "support",
+      "tier": "S",
+      "score": 61.35,
+      "win_rate": 50.59,
+      "countered_by": [
+        "Leona",
+        "Senna",
+        "Thresh"
+      ],
+      "duos": [
+        "Smolder",
+        "Garen",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Lulu",
+      "role": "support",
+      "tier": "S",
+      "score": 60.55,
+      "win_rate": 49.75,
+      "countered_by": [
+        "Leona",
+        "Seraphine",
+        "Thresh"
+      ],
+      "duos": [
+        "Jinx",
+        "Twitch",
+        "Vayne"
+      ]
+    },
+    {
+      "champion": "Brand",
+      "role": "support",
+      "tier": "S",
+      "score": 59.57,
+      "win_rate": 51.0,
+      "countered_by": [
+        "Vel'Koz",
+        "Xerath",
+        "Milio"
+      ],
+      "duos": [
+        "Garen",
+        "Master Yi",
+        "Yasuo"
+      ]
+    },
+    {
+      "champion": "Yuumi",
+      "role": "support",
+      "tier": "S",
+      "score": 59.51,
+      "win_rate": 47.84,
+      "countered_by": [
+        "Nautilus",
+        "Thresh",
+        "Seraphine"
+      ],
+      "duos": [
+        "Lucian",
+        "Zeri",
+        "Twitch"
+      ]
+    },
+    {
+      "champion": "Swain",
+      "role": "support",
+      "tier": "A",
+      "score": 58.7,
+      "win_rate": 49.88,
+      "countered_by": [
+        "Morgana",
+        "Seraphine",
+        "Senna"
+      ],
+      "duos": [
+        "Garen",
+        "Master Yi",
+        "Miss Fortune"
+      ]
+    },
+    {
+      "champion": "Milio",
+      "role": "support",
+      "tier": "A",
+      "score": 58.5,
+      "win_rate": 51.83,
+      "countered_by": [
+        "Fiddlesticks"
+      ],
+      "duos": [
+        "Garen",
+        "Jinx",
+        "Ashe"
+      ]
+    },
+    {
+      "champion": "Pantheon",
+      "role": "support",
+      "tier": "A",
+      "score": 57.4,
+      "win_rate": 49.63,
+      "countered_by": [
+        "Thresh",
+        "Nautilus",
+        "Seraphine"
+      ],
+      "duos": [
+        "Miss Fortune",
+        "Garen",
+        "Master Yi"
+      ]
+    },
+    {
+      "champion": "Soraka",
+      "role": "support",
+      "tier": "A",
+      "score": 57.14,
+      "win_rate": 51.3,
+      "countered_by": [],
+      "duos": [
+        "Ashe",
+        "Garen",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Karma",
+      "role": "support",
+      "tier": "A",
+      "score": 56.05,
+      "win_rate": 49.18,
+      "countered_by": [
+        "Nautilus",
+        "Thresh",
+        "Seraphine"
+      ],
+      "duos": [
+        "Garen",
+        "Kayn",
+        "Jinx"
+      ]
+    },
+    {
+      "champion": "Tahm Kench",
+      "role": "support",
+      "tier": "A",
+      "score": 55.74,
+      "win_rate": 50.59,
+      "countered_by": [
+        "Senna",
+        "Swain",
+        "Seraphine"
+      ],
+      "duos": [
+        "Senna",
+        "Garen",
+        "Kayn"
+      ]
+    },
+    {
+      "champion": "Xerath",
+      "role": "support",
+      "tier": "A",
+      "score": 55.15,
+      "win_rate": 50.79,
+      "countered_by": [
+        "Nautilus",
+        "Blitzcrank",
+        "Leona"
+      ],
+      "duos": [
+        "Garen",
+        "Master Yi",
+        "Nocturne"
+      ]
+    }
+  ],
+  "tier_only_champions": [
+    {
+      "champion": "Shen",
+      "role": "top",
+      "tier": "A",
+      "score": 56.05
+    },
+    {
+      "champion": "Ornn",
+      "role": "top",
+      "tier": "A",
+      "score": 55.61
+    },
+    {
+      "champion": "Jayce",
+      "role": "top",
+      "tier": "A",
+      "score": 54.26
+    },
+    {
+      "champion": "Zaahen",
+      "role": "top",
+      "tier": "A",
+      "score": 54.22
+    },
+    {
+      "champion": "Kayle",
+      "role": "top",
+      "tier": "A",
+      "score": 54.0
+    },
+    {
+      "champion": "Cho'Gath",
+      "role": "top",
+      "tier": "A",
+      "score": 53.03
+    },
+    {
+      "champion": "Vayne",
+      "role": "top",
+      "tier": "A",
+      "score": 52.24
+    },
+    {
+      "champion": "Fiora",
+      "role": "top",
+      "tier": "A",
+      "score": 51.8
+    },
+    {
+      "champion": "Urgot",
+      "role": "top",
+      "tier": "A",
+      "score": 51.76
+    },
+    {
+      "champion": "Tahm Kench",
+      "role": "top",
+      "tier": "A",
+      "score": 50.44
+    },
+    {
+      "champion": "Riven",
+      "role": "top",
+      "tier": "B",
+      "score": 50.39
+    },
+    {
+      "champion": "Gnar",
+      "role": "top",
+      "tier": "B",
+      "score": 49.46
+    },
+    {
+      "champion": "Pantheon",
+      "role": "top",
+      "tier": "B",
+      "score": 48.53
+    },
+    {
+      "champion": "K'Sante",
+      "role": "top",
+      "tier": "B",
+      "score": 48.32
+    },
+    {
+      "champion": "Olaf",
+      "role": "top",
+      "tier": "B",
+      "score": 48.24
+    },
+    {
+      "champion": "Ambessa",
+      "role": "top",
+      "tier": "B",
+      "score": 47.19
+    },
+    {
+      "champion": "Akali",
+      "role": "top",
+      "tier": "B",
+      "score": 46.7
+    },
+    {
+      "champion": "Heimerdinger",
+      "role": "top",
+      "tier": "B",
+      "score": 46.12
+    },
+    {
+      "champion": "Gwen",
+      "role": "top",
+      "tier": "B",
+      "score": 45.95
+    },
+    {
+      "champion": "Trundle",
+      "role": "top",
+      "tier": "B",
+      "score": 45.42
+    },
+    {
+      "champion": "Singed",
+      "role": "top",
+      "tier": "B",
+      "score": 45.32
+    },
+    {
+      "champion": "Camille",
+      "role": "top",
+      "tier": "B",
+      "score": 43.87
+    },
+    {
+      "champion": "Warwick",
+      "role": "top",
+      "tier": "B",
+      "score": 43.52
+    },
+    {
+      "champion": "Gragas",
+      "role": "top",
+      "tier": "B",
+      "score": 43.29
+    },
+    {
+      "champion": "Kennen",
+      "role": "top",
+      "tier": "B",
+      "score": 42.24
+    },
+    {
+      "champion": "Kled",
+      "role": "top",
+      "tier": "B",
+      "score": 41.82
+    },
+    {
+      "champion": "Rumble",
+      "role": "top",
+      "tier": "C",
+      "score": 41.44
+    },
+    {
+      "champion": "Vladimir",
+      "role": "top",
+      "tier": "C",
+      "score": 40.82
+    },
+    {
+      "champion": "Xin Zhao",
+      "role": "top",
+      "tier": "C",
+      "score": 40.23
+    },
+    {
+      "champion": "Quinn",
+      "role": "top",
+      "tier": "C",
+      "score": 39.81
+    },
+    {
+      "champion": "Poppy",
+      "role": "top",
+      "tier": "C",
+      "score": 39.23
+    },
+    {
+      "champion": "Wukong",
+      "role": "top",
+      "tier": "C",
+      "score": 39.01
+    },
+    {
+      "champion": "Varus",
+      "role": "top",
+      "tier": "C",
+      "score": 37.73
+    },
+    {
+      "champion": "Ryze",
+      "role": "top",
+      "tier": "C",
+      "score": 37.34
+    },
+    {
+      "champion": "Aurora",
+      "role": "top",
+      "tier": "C",
+      "score": 36.76
+    },
+    {
+      "champion": "Maokai",
+      "role": "top",
+      "tier": "D",
+      "score": 36.42
+    },
+    {
+      "champion": "Anivia",
+      "role": "top",
+      "tier": "D",
+      "score": 36.02
+    },
+    {
+      "champion": "Udyr",
+      "role": "top",
+      "tier": "D",
+      "score": 35.05
+    },
+    {
+      "champion": "Fiddlesticks",
+      "role": "top",
+      "tier": "D",
+      "score": 34.82
+    },
+    {
+      "champion": "Zac",
+      "role": "top",
+      "tier": "D",
+      "score": 34.11
+    },
+    {
+      "champion": "Cassiopeia",
+      "role": "top",
+      "tier": "D",
+      "score": 34.09
+    },
+    {
+      "champion": "Skarner",
+      "role": "top",
+      "tier": "D",
+      "score": 32.25
+    },
+    {
+      "champion": "Jax",
+      "role": "jungle",
+      "tier": "A",
+      "score": 56.63
+    },
+    {
+      "champion": "Nasus",
+      "role": "jungle",
+      "tier": "A",
+      "score": 56.53
+    },
+    {
+      "champion": "Talon",
+      "role": "jungle",
+      "tier": "A",
+      "score": 55.15
+    },
+    {
+      "champion": "Ekko",
+      "role": "jungle",
+      "tier": "A",
+      "score": 54.78
+    },
+    {
+      "champion": "Rammus",
+      "role": "jungle",
+      "tier": "A",
+      "score": 53.91
+    },
+    {
+      "champion": "Lillia",
+      "role": "jungle",
+      "tier": "A",
+      "score": 53.88
+    },
+    {
+      "champion": "Rengar",
+      "role": "jungle",
+      "tier": "A",
+      "score": 53.29
+    },
+    {
+      "champion": "Hecarim",
+      "role": "jungle",
+      "tier": "A",
+      "score": 52.16
+    },
+    {
+      "champion": "Evelynn",
+      "role": "jungle",
+      "tier": "A",
+      "score": 51.89
+    },
+    {
+      "champion": "Nunu & Willump",
+      "role": "jungle",
+      "tier": "A",
+      "score": 51.38
+    },
+    {
+      "champion": "Sejuani",
+      "role": "jungle",
+      "tier": "A",
+      "score": 50.85
+    },
+    {
+      "champion": "Kindred",
+      "role": "jungle",
+      "tier": "A",
+      "score": 50.51
+    },
+    {
+      "champion": "Fiddlesticks",
+      "role": "jungle",
+      "tier": "B",
+      "score": 49.98
+    },
+    {
+      "champion": "Zac",
+      "role": "jungle",
+      "tier": "B",
+      "score": 49.28
+    },
+    {
+      "champion": "Udyr",
+      "role": "jungle",
+      "tier": "B",
+      "score": 48.57
+    },
+    {
+      "champion": "Zed",
+      "role": "jungle",
+      "tier": "B",
+      "score": 48.18
+    },
+    {
+      "champion": "Volibear",
+      "role": "jungle",
+      "tier": "B",
+      "score": 47.4
+    },
+    {
+      "champion": "Nidalee",
+      "role": "jungle",
+      "tier": "B",
+      "score": 47.21
+    },
+    {
+      "champion": "Bel'Veth",
+      "role": "jungle",
+      "tier": "B",
+      "score": 46.86
+    },
+    {
+      "champion": "Malphite",
+      "role": "jungle",
+      "tier": "B",
+      "score": 46.17
+    },
+    {
+      "champion": "Quinn",
+      "role": "jungle",
+      "tier": "B",
+      "score": 45.63
+    },
+    {
+      "champion": "Teemo",
+      "role": "jungle",
+      "tier": "B",
+      "score": 45.41
+    },
+    {
+      "champion": "Elise",
+      "role": "jungle",
+      "tier": "B",
+      "score": 43.97
+    },
+    {
+      "champion": "Qiyana",
+      "role": "jungle",
+      "tier": "B",
+      "score": 43.85
+    },
+    {
+      "champion": "Karthus",
+      "role": "jungle",
+      "tier": "B",
+      "score": 43.46
+    },
+    {
+      "champion": "Jayce",
+      "role": "jungle",
+      "tier": "B",
+      "score": 42.92
+    },
+    {
+      "champion": "Pantheon",
+      "role": "jungle",
+      "tier": "B",
+      "score": 42.35
+    },
+    {
+      "champion": "Trundle",
+      "role": "jungle",
+      "tier": "B",
+      "score": 42.2
+    },
+    {
+      "champion": "Aatrox",
+      "role": "jungle",
+      "tier": "C",
+      "score": 41.9
+    },
+    {
+      "champion": "Skarner",
+      "role": "jungle",
+      "tier": "C",
+      "score": 40.63
+    },
+    {
+      "champion": "Rek'Sai",
+      "role": "jungle",
+      "tier": "C",
+      "score": 40.25
+    },
+    {
+      "champion": "Poppy",
+      "role": "jungle",
+      "tier": "C",
+      "score": 39.89
+    },
+    {
+      "champion": "Tryndamere",
+      "role": "jungle",
+      "tier": "C",
+      "score": 39.23
+    },
+    {
+      "champion": "Ivern",
+      "role": "jungle",
+      "tier": "C",
+      "score": 39.21
+    },
+    {
+      "champion": "Dr. Mundo",
+      "role": "jungle",
+      "tier": "C",
+      "score": 38.56
+    },
+    {
+      "champion": "Ambessa",
+      "role": "jungle",
+      "tier": "C",
+      "score": 37.63
+    },
+    {
+      "champion": "Olaf",
+      "role": "jungle",
+      "tier": "C",
+      "score": 37.16
+    },
+    {
+      "champion": "Zyra",
+      "role": "jungle",
+      "tier": "C",
+      "score": 37.06
+    },
+    {
+      "champion": "Gwen",
+      "role": "jungle",
+      "tier": "D",
+      "score": 36.04
+    },
+    {
+      "champion": "Cho'Gath",
+      "role": "jungle",
+      "tier": "D",
+      "score": 36.03
+    },
+    {
+      "champion": "Gragas",
+      "role": "jungle",
+      "tier": "D",
+      "score": 34.95
+    },
+    {
+      "champion": "Zaahen",
+      "role": "jungle",
+      "tier": "D",
+      "score": 34.87
+    },
+    {
+      "champion": "Shen",
+      "role": "jungle",
+      "tier": "D",
+      "score": 34.44
+    },
+    {
+      "champion": "Maokai",
+      "role": "jungle",
+      "tier": "D",
+      "score": 33.57
+    },
+    {
+      "champion": "Taliyah",
+      "role": "jungle",
+      "tier": "D",
+      "score": 32.93
+    },
+    {
+      "champion": "LeBlanc",
+      "role": "mid",
+      "tier": "A",
+      "score": 54.86
+    },
+    {
+      "champion": "Hwei",
+      "role": "mid",
+      "tier": "A",
+      "score": 54.08
+    },
+    {
+      "champion": "Lissandra",
+      "role": "mid",
+      "tier": "A",
+      "score": 53.64
+    },
+    {
+      "champion": "Vladimir",
+      "role": "mid",
+      "tier": "A",
+      "score": 53.13
+    },
+    {
+      "champion": "Twisted Fate",
+      "role": "mid",
+      "tier": "A",
+      "score": 52.19
+    },
+    {
+      "champion": "Irelia",
+      "role": "mid",
+      "tier": "A",
+      "score": 51.58
+    },
+    {
+      "champion": "Ekko",
+      "role": "mid",
+      "tier": "A",
+      "score": 51.11
+    },
+    {
+      "champion": "Aurora",
+      "role": "mid",
+      "tier": "B",
+      "score": 50.06
+    },
+    {
+      "champion": "Akshan",
+      "role": "mid",
+      "tier": "B",
+      "score": 49.51
+    },
+    {
+      "champion": "Zoe",
+      "role": "mid",
+      "tier": "B",
+      "score": 48.71
+    },
+    {
+      "champion": "Ryze",
+      "role": "mid",
+      "tier": "B",
+      "score": 47.98
+    },
+    {
+      "champion": "Orianna",
+      "role": "mid",
+      "tier": "B",
+      "score": 47.22
+    },
+    {
+      "champion": "Talon",
+      "role": "mid",
+      "tier": "B",
+      "score": 47.0
+    },
+    {
+      "champion": "Annie",
+      "role": "mid",
+      "tier": "B",
+      "score": 46.67
+    },
+    {
+      "champion": "Kassadin",
+      "role": "mid",
+      "tier": "B",
+      "score": 46.07
+    },
+    {
+      "champion": "Anivia",
+      "role": "mid",
+      "tier": "B",
+      "score": 45.39
+    },
+    {
+      "champion": "Aurelion Sol",
+      "role": "mid",
+      "tier": "B",
+      "score": 44.77
+    },
+    {
+      "champion": "Brand",
+      "role": "mid",
+      "tier": "B",
+      "score": 43.68
+    },
+    {
+      "champion": "Qiyana",
+      "role": "mid",
+      "tier": "B",
+      "score": 43.4
+    },
+    {
+      "champion": "Azir",
+      "role": "mid",
+      "tier": "B",
+      "score": 42.03
+    },
+    {
+      "champion": "Pantheon",
+      "role": "mid",
+      "tier": "B",
+      "score": 42.03
+    },
+    {
+      "champion": "Cassiopeia",
+      "role": "mid",
+      "tier": "C",
+      "score": 41.76
+    },
+    {
+      "champion": "Vel'Koz",
+      "role": "mid",
+      "tier": "C",
+      "score": 41.27
+    },
+    {
+      "champion": "Riven",
+      "role": "mid",
+      "tier": "C",
+      "score": 40.72
+    },
+    {
+      "champion": "Ziggs",
+      "role": "mid",
+      "tier": "C",
+      "score": 40.01
+    },
+    {
+      "champion": "Swain",
+      "role": "mid",
+      "tier": "C",
+      "score": 39.04
+    },
+    {
+      "champion": "Taliyah",
+      "role": "mid",
+      "tier": "C",
+      "score": 38.71
+    },
+    {
+      "champion": "Sion",
+      "role": "mid",
+      "tier": "C",
+      "score": 38.48
+    },
+    {
+      "champion": "Heimerdinger",
+      "role": "mid",
+      "tier": "C",
+      "score": 37.99
+    },
+    {
+      "champion": "Jayce",
+      "role": "mid",
+      "tier": "C",
+      "score": 36.59
+    },
+    {
+      "champion": "Cho'Gath",
+      "role": "mid",
+      "tier": "D",
+      "score": 36.32
+    },
+    {
+      "champion": "Neeko",
+      "role": "mid",
+      "tier": "D",
+      "score": 35.4
+    },
+    {
+      "champion": "Gragas",
+      "role": "mid",
+      "tier": "D",
+      "score": 35.15
+    },
+    {
+      "champion": "Gwen",
+      "role": "mid",
+      "tier": "D",
+      "score": 34.69
+    },
+    {
+      "champion": "Kennen",
+      "role": "mid",
+      "tier": "D",
+      "score": 33.85
+    },
+    {
+      "champion": "Corki",
+      "role": "mid",
+      "tier": "D",
+      "score": 31.79
+    },
+    {
+      "champion": "Varus",
+      "role": "adc",
+      "tier": "B",
+      "score": 48.28
+    },
+    {
+      "champion": "Zeri",
+      "role": "adc",
+      "tier": "B",
+      "score": 46.93
+    },
+    {
+      "champion": "Brand",
+      "role": "adc",
+      "tier": "B",
+      "score": 45.7
+    },
+    {
+      "champion": "Mel",
+      "role": "adc",
+      "tier": "B",
+      "score": 45.59
+    },
+    {
+      "champion": "Yasuo",
+      "role": "adc",
+      "tier": "B",
+      "score": 44.55
+    },
+    {
+      "champion": "Seraphine",
+      "role": "adc",
+      "tier": "B",
+      "score": 44.04
+    },
+    {
+      "champion": "Kog'Maw",
+      "role": "adc",
+      "tier": "B",
+      "score": 42.75
+    },
+    {
+      "champion": "Kalista",
+      "role": "adc",
+      "tier": "C",
+      "score": 40.87
+    },
+    {
+      "champion": "Nilah",
+      "role": "adc",
+      "tier": "C",
+      "score": 40.86
+    },
+    {
+      "champion": "Veigar",
+      "role": "adc",
+      "tier": "C",
+      "score": 40.14
+    },
+    {
+      "champion": "Swain",
+      "role": "adc",
+      "tier": "C",
+      "score": 39.33
+    },
+    {
+      "champion": "Hwei",
+      "role": "adc",
+      "tier": "C",
+      "score": 37.14
+    },
+    {
+      "champion": "Corki",
+      "role": "adc",
+      "tier": "C",
+      "score": 37.04
+    },
+    {
+      "champion": "Vel'Koz",
+      "role": "adc",
+      "tier": "D",
+      "score": 36.14
+    },
+    {
+      "champion": "Aurelion Sol",
+      "role": "adc",
+      "tier": "D",
+      "score": 35.3
+    },
+    {
+      "champion": "Karthus",
+      "role": "adc",
+      "tier": "D",
+      "score": 34.5
+    },
+    {
+      "champion": "Cassiopeia",
+      "role": "adc",
+      "tier": "D",
+      "score": 32.57
+    },
+    {
+      "champion": "Vel'Koz",
+      "role": "support",
+      "tier": "A",
+      "score": 54.6
+    },
+    {
+      "champion": "Braum",
+      "role": "support",
+      "tier": "A",
+      "score": 53.44
+    },
+    {
+      "champion": "Zyra",
+      "role": "support",
+      "tier": "A",
+      "score": 52.78
+    },
+    {
+      "champion": "Mel",
+      "role": "support",
+      "tier": "A",
+      "score": 52.7
+    },
+    {
+      "champion": "Rell",
+      "role": "support",
+      "tier": "A",
+      "score": 51.62
+    },
+    {
+      "champion": "Bard",
+      "role": "support",
+      "tier": "A",
+      "score": 51.48
+    },
+    {
+      "champion": "Alistar",
+      "role": "support",
+      "tier": "A",
+      "score": 50.64
+    },
+    {
+      "champion": "Rakan",
+      "role": "support",
+      "tier": "B",
+      "score": 50.05
+    },
+    {
+      "champion": "Sona",
+      "role": "support",
+      "tier": "B",
+      "score": 49.02
+    },
+    {
+      "champion": "Neeko",
+      "role": "support",
+      "tier": "B",
+      "score": 48.94
+    },
+    {
+      "champion": "Poppy",
+      "role": "support",
+      "tier": "B",
+      "score": 48.37
+    },
+    {
+      "champion": "Zilean",
+      "role": "support",
+      "tier": "B",
+      "score": 47.79
+    },
+    {
+      "champion": "Maokai",
+      "role": "support",
+      "tier": "B",
+      "score": 47.13
+    },
+    {
+      "champion": "Janna",
+      "role": "support",
+      "tier": "B",
+      "score": 46.51
+    },
+    {
+      "champion": "Camille",
+      "role": "support",
+      "tier": "B",
+      "score": 45.14
+    },
+    {
+      "champion": "Shaco",
+      "role": "support",
+      "tier": "B",
+      "score": 45.1
+    },
+    {
+      "champion": "Teemo",
+      "role": "support",
+      "tier": "B",
+      "score": 44.13
+    },
+    {
+      "champion": "Malphite",
+      "role": "support",
+      "tier": "B",
+      "score": 43.97
+    },
+    {
+      "champion": "Taric",
+      "role": "support",
+      "tier": "B",
+      "score": 43.77
+    },
+    {
+      "champion": "Galio",
+      "role": "support",
+      "tier": "B",
+      "score": 42.83
+    },
+    {
+      "champion": "Renata Glasc",
+      "role": "support",
+      "tier": "B",
+      "score": 41.99
+    },
+    {
+      "champion": "Shen",
+      "role": "support",
+      "tier": "C",
+      "score": 41.51
+    },
+    {
+      "champion": "Hwei",
+      "role": "support",
+      "tier": "C",
+      "score": 40.62
+    },
+    {
+      "champion": "Zoe",
+      "role": "support",
+      "tier": "C",
+      "score": 39.4
+    },
+    {
+      "champion": "Veigar",
+      "role": "support",
+      "tier": "C",
+      "score": 39.1
+    },
+    {
+      "champion": "LeBlanc",
+      "role": "support",
+      "tier": "C",
+      "score": 38.54
+    },
+    {
+      "champion": "Amumu",
+      "role": "support",
+      "tier": "C",
+      "score": 38.47
+    },
+    {
+      "champion": "Anivia",
+      "role": "support",
+      "tier": "C",
+      "score": 37.02
+    },
+    {
+      "champion": "Fiddlesticks",
+      "role": "support",
+      "tier": "C",
+      "score": 37.0
+    },
+    {
+      "champion": "Elise",
+      "role": "support",
+      "tier": "D",
+      "score": 36.2
+    },
+    {
+      "champion": "Annie",
+      "role": "support",
+      "tier": "D",
+      "score": 35.69
+    },
+    {
+      "champion": "Nidalee",
+      "role": "support",
+      "tier": "D",
+      "score": 34.54
+    },
+    {
+      "champion": "Zac",
+      "role": "support",
+      "tier": "D",
+      "score": 34.28
+    },
+    {
+      "champion": "Skarner",
+      "role": "support",
+      "tier": "D",
+      "score": 33.21
+    },
+    {
+      "champion": "Ivern",
+      "role": "support",
+      "tier": "D",
+      "score": 32.52
+    }
+  ]
+}
