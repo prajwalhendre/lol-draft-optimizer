@@ -58,6 +58,13 @@ function indexCache(payload) {
       const c = byName[name];
       return c ? `${DD_BASE}/cdn/${payload.version}/img/champion/${c.id}.png` : null;
     },
+    // Splash art is served at a fixed, unversioned URL that Riot updates in place
+    // (visual reworks replace the same file) -- this is always the current splash,
+    // no patch-version bookkeeping needed. skin 0 = default/base splash.
+    splashUrl(name, skin = 0) {
+      const c = byName[name];
+      return c ? `${DD_BASE}/cdn/img/champion/splash/${c.id}_${skin}.jpg` : null;
+    },
   };
 }
 
